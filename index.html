@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Boo 💖</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ============ SPLASH ============ -->
+  <div class="splash" id="splash">
+    <div class="splash__inner">
+      <p class="splash__hint">para ti</p>
+      <h1 class="splash__title">My Boo 💖</h1>
+      <button class="splash__btn" id="splashBtn">Haz clic aquí, My Boo 💖</button>
+    </div>
+    <canvas class="splash__hearts" id="heartsCanvas"></canvas>
+  </div>
+
+  <!-- ============ MÚSICA ============ -->
+  <audio id="bgMusic" loop>
+    <source src="https://www.youtube.com/watch?v=LjhCEhWiKXk" type="audio/mpeg">
+  </audio>
+
+  <!-- ============ MAIN ============ -->
+  <div class="site" id="site">
+
+    <!-- NAV -->
+    <header class="nav">
+      <span class="nav__logo">My Boo 💖</span>
+      <nav class="nav__links">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre">Sobre Mí</a>
+        <a href="#galeria">Galería</a>
+        <a href="#historia">Nuestra Historia</a>
+        <a href="#razones">Razones</a>
+        <a href="#carta">Carta</a>
+        <a href="#mensaje">Mensaje</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero__photo">
+        <div class="hero__img-wrap">
+          <img src="img/foto-principal.jpg" alt="My Boo" onerror="this.style.display='none'">
+          <div class="hero__placeholder">💖</div>
+        </div>
+      </div>
+      <div class="hero__text">
+        <span class="eyebrow">bienvenida</span>
+        <h2 class="hero__title">Hola,<br><em>My Boo</em> 💖</h2>
+        <p class="hero__sub">Esta página fue hecha con todo el amor del mundo para la persona más especial de mi vida.
+        </p>
+        <div class="counter" id="counter">
+          <div class="counter__item">
+            <span class="counter__val" id="cYears">0</span>
+            <span class="counter__label">años</span>
+          </div>
+          <div class="counter__item">
+            <span class="counter__val" id="cMonths">0</span>
+            <span class="counter__label">meses</span>
+          </div>
+          <div class="counter__item">
+            <span class="counter__val" id="cDays">0</span>
+            <span class="counter__label">días</span>
+          </div>
+
+        </div>
+        <p class="counter__label" style="margin-top:8px; font-size:13px; color:var(--blue-soft)">juntos desde el 3 de
+          agosto 🗓️</p>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="about" id="sobre">
+      <div class="about__inner">
+        <span class="eyebrow">sobre mí</span>
+        <h2 class="section__title">Sobre My Boo 💖</h2>
+        <p class="about__text">
+          Aquí puedes escribir una pequeña descripción sobre ella,
+          su personalidad, lo maravillosa que es y todo lo que quieras contar.
+          Lo que la hace especial, lo que más te gusta de ella, sus pequeñas
+          locuras que tanto amas.
+        </p>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="gallery" id="galeria">
+      <div class="gallery__head">
+        <span class="eyebrow">recuerdos</span>
+        <h2 class="section__title">Nuestros momentos 📸</h2>
+      </div>
+      <div class="gallery__grid">
+        <div class="gallery__item"><img src="img/foto1.jpg" alt="Recuerdo 1"
+            onerror="this.parentElement.classList.add('gallery__item--empty')"><span class="gallery__empty">📷</span>
+        </div>
+        <div class="gallery__item"><img src="img/foto2.jpg" alt="Recuerdo 2"
+            onerror="this.parentElement.classList.add('gallery__item--empty')"><span class="gallery__empty">📷</span>
+        </div>
+        <div class="gallery__item"><img src="img/foto3.jpg" alt="Recuerdo 3"
+            onerror="this.parentElement.classList.add('gallery__item--empty')"><span class="gallery__empty">📷</span>
+        </div>
+        <div class="gallery__item"><img src="img/foto4.jpg" alt="Recuerdo 4"
+            onerror="this.parentElement.classList.add('gallery__item--empty')"><span class="gallery__empty">📷</span>
+        </div>
+        <div class="gallery__item"><img src="img/foto5.jpg" alt="Recuerdo 5"
+            onerror="this.parentElement.classList.add('gallery__item--empty')"><span class="gallery__empty">📷</span>
+        </div>
+        <div class="gallery__item"><img src="img/foto6.jpg" alt="Recuerdo 6"
+            onerror="this.parentElement.classList.add('gallery__item--empty')"><span class="gallery__empty">📷</span>
+        </div>
+        <div class="gallery__item"><img src="img/foto7.jpg" alt="Recuerdo 7"
+            onerror="this.parentElement.classList.add('gallery__item--empty')"><span class="gallery__empty">📷</span>
+        </div>
+        <div class="gallery__item"><img src="img/foto8.jpg" alt="Recuerdo 8"
+            onerror="this.parentElement.classList.add('gallery__item--empty')"><span class="gallery__empty">📷</span>
+        </div>
+        <div class="gallery__item"><img src="img/foto9.jpg" alt="Recuerdo 9"
+            onerror="this.parentElement.classList.add('gallery__item--empty')"><span class="gallery__empty">📷</span>
+        </div>
+        <div class="gallery__item"><img src="img/foto10.jpg" alt="Recuerdo 10"
+            onerror="this.parentElement.classList.add('gallery__item--empty')"><span class="gallery__empty">📷</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- HISTORIA -->
+    <section class="story" id="historia">
+      <div class="story__inner">
+        <span class="eyebrow">nuestra historia</span>
+        <h2 class="section__title">Nuestra Historia 💌</h2>
+        <p class="story__text">
+          Todo comenzó una noche, en la fiesta de mi prima, el 4 de octubre de 2018.
+          habíamos visto antes, pero no nos conocíamos de verdad. Yo estaba algo tímido, hasta que de la nada te
+          acercaste, muy segura de ti misma, a preguntarme mi nombre. Y así, sin más, surgió la mejor conversación que
+          he tenido en mi vida. Entre risas y más risas, me di cuenta de lo linda que eras — y desde ese momento supe
+          que tú tenías que ser mía.
+          Nos veíamos poco, casi siempre coincidíamos en casa de mi prima, pero había algo entre nosotros que nunca se
+          apagaba. Una chispa que los dos sentíamos y que ninguno de los dos quería ignorar.
+          Pasaron los años. En 2021 por fin me atreví a pedirte el contacto. Al principio fue difícil coincidir, hasta
+          que llegó el 19 de noviembre de ese mismo año — estuvimos hablando por horas, hasta la madrugada, como si el
+          tiempo no existiera.
+          Desde esa noche empezó a construirse la mejor historia de mi vida. No fue fácil, pero valió cada segundo.
+        </p>
+      </div>
+    </section>
+
+    <!-- RAZONES -->
+    <section class="reasons" id="razones">
+      <div class="reasons__head">
+        <span class="eyebrow">por qué te amo</span>
+        <h2 class="section__title">Razones para amarte 💖</h2>
+      </div>
+      <div class="reasons__grid">
+        <div class="reason-card">
+          <span class="reason-card__icon">😊</span>
+          <p class="reason-card__text">Tu sonrisa ilumina cualquier lugar donde estés.</p>
+        </div>
+        <div class="reason-card">
+          <span class="reason-card__icon">🤗</span>
+          <p class="reason-card__text">Tus abrazos son mi lugar favorito en el mundo.</p>
+        </div>
+        <div class="reason-card">
+          <span class="reason-card__icon">💪</span>
+          <p class="reason-card__text">Eres increíblemente fuerte aunque a veces no lo veas.</p>
+        </div>
+        <div class="reason-card">
+          <span class="reason-card__icon">🌙</span>
+          <p class="reason-card__text">Contigo hasta los días más difíciles se hacen más fáciles.</p>
+        </div>
+        <div class="reason-card">
+          <span class="reason-card__icon">✨</span>
+          <p class="reason-card__text">Me haces querer ser mejor persona cada día.</p>
+        </div>
+        <div class="reason-card">
+          <span class="reason-card__icon">💖</span>
+          <p class="reason-card__text">Simplemente por ser tú, exactamente como eres.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARTA DESPLEGABLE -->
+    <section class="letter-section" id="carta">
+      <div class="letter-wrap">
+        <span class="eyebrow">solo para ti</span>
+        <h2 class="section__title">Una carta para ti 💌</h2>
+        <p class="letter-hint">Haz clic en el sobre para abrirlo</p>
+        <div class="envelope" id="envelope">
+          <div class="envelope__flap"></div>
+          <div class="envelope__body">
+            <span class="envelope__icon">💌</span>
+          </div>
+          <div class="letter" id="letter">
+            <div class="letter__inner">
+              <p class="letter__date">3 de agosto de 2022 — hoy</p>
+              <p class="letter__text">
+                My Boo,<br><br>
+                Mi amor,
+
+                Hay personas que llegan a la vida de uno para cambiarla por completo, y tú eres exactamente eso para mí.
+                No puedo explicar con palabras lo agradecido que estoy de haberte encontrado, porque desde que llegaste
+                haces que mis días tengan un motivo más para sonreír.
+
+                Quiero que nunca olvides la mujer tan increíble que eres. Eres fuerte incluso cuando sientes que ya no
+                puedes más. Eres perseverante y nunca te rindes, aunque el camino sea difícil. Eres inteligente, capaz
+                de lograr todo lo que te propongas, y tienes una luz tan bonita que ilumina a las personas que tienen la
+                suerte de conocerte.
+
+                A veces sé que puedes dudar de ti misma, sentirte cansada o pensar que las cosas son demasiado
+                difíciles. Pero quiero que cuando eso pase vuelvas a leer estas palabras y recuerdes algo: tú puedes con
+                todo. Has superado momentos que parecían imposibles y aun así sigues de pie. Eso demuestra la persona
+                tan valiente que eres.
+
+                Nunca dejes que un mal día te haga creer que tienes una mala vida o que no eres suficiente. Porque sí lo
+                eres. Eres única, brillante y vales muchísimo más de lo que a veces alcanzas a ver. No permitas que
+                nadie, ni siquiera tus propios miedos, te hagan olvidar todo el potencial que llevas dentro.
+
+                Y si algún día sientes que el mundo pesa demasiado sobre tus hombros, no intentes cargarlo sola. Quiero
+                que recuerdes que siempre voy a estar aquí para ti. Cuando sientas que no puedes avanzar, yo voy a
+                estirarte la mano para ayudarte a levantarte. Cuando quieras rendirte, voy a recordarte por qué
+                empezaste. Cuando las lágrimas aparezcan, voy a hacer todo lo posible para volver a dibujarte una
+                sonrisa.
+
+                No prometo que la vida siempre será fácil, pero sí prometo que mientras esté a tu lado nunca tendrás que
+                enfrentarla sola. En tus días felices celebraré contigo, y en tus días más difíciles caminaré a tu lado
+                hasta que vuelvas a encontrar la luz.
+
+                También quiero seguir soñando contigo. Quiero que cumplamos nuestras metas, que celebremos nuestros
+                logros, que viajemos, que riamos por tonterías, que nos apoyemos cuando las cosas no salgan como
+                esperamos y que construyamos una historia tan bonita que algún día podamos mirar atrás y decir: "Lo
+                logramos juntos".
+
+                Gracias por existir. Gracias por ser esa mujer tan maravillosa que admiro todos los días. Gracias por
+                enseñarme tanto con tu forma de luchar, de amar y de nunca rendirte.
+
+                Te amo más de lo que estas palabras pueden expresar. Y si alguna vez olvidas lo valiosa que eres, aquí
+                estaré para recordártelo las veces que sean necesarias.
+
+                Porque eres mi persona favorita, mi orgullo, mi tranquilidad y una de las razones más bonitas por las
+                que sonrío cada día.
+
+                Con todo mi corazón,
+
+                ❤️ Tu niño.
+                <br><br>
+                Con todo mi amor,<br>
+                <em>siempre tuyo 💖</em>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENSAJE FINAL -->
+    <section class="message" id="mensaje">
+      <div class="message__inner">
+        <span class="eyebrow">para siempre</span>
+        <h2 class="message__title">Te amo muchísimo 💖</h2>
+        <p class="message__text">
+          Gracias por existir. Gracias por cada sonrisa, cada abrazo
+          y cada momento a tu lado. Eres lo mejor que me ha pasado.
+        </p>
+        <span class="message__sign">— siempre tuyo 💖</span>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Hecho con todo el amor del mundo 💖</p>
+    </footer>
+
+  </div><!-- /site -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>
